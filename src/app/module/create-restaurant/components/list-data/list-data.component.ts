@@ -28,8 +28,10 @@ export class ListDataComponent implements OnInit {
           {
             buttonName: 'Edit',
             function: () => {
-              this.customDialogService.openDialog(rowData.data).subscribe((data) => {
-                this.store.dispatch(updateList({ listData: data, index: rowData.rowIndex }));
+             this.customDialogService.openDialog(rowData.data).subscribe((data) => {
+                if (data) {
+                  this.store.dispatch(updateList({ listData: data, index: rowData.rowIndex }));
+                }
               });
             },
             btnColor: 'blue',

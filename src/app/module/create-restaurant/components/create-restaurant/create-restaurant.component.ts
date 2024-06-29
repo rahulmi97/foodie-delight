@@ -18,7 +18,9 @@ export class CreateRestaurantComponent {
   }
   createList() {
     this.customDialogService.openDialog().subscribe((data) => {
-      this.store.dispatch(createList({listData:data}));
+      if (data) {
+        this.store.dispatch(createList({listData:data}));
+      }
     });
   }
 }
