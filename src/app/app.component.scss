@@ -1,0 +1,16 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: aliceblue;
+  flex-direction: column;
+  h1 {
+    color: blueviolet;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .detail-conatiner {
+    height: 600px;
+  }
+}

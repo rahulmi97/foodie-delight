@@ -1,0 +1,22 @@
+<div class="list-container">
+  <div class="search-container">
+    <!-- <input type="text" placeholder="Type to serch here" (keyup)="searchForData($event.target)"> -->
+    <mat-form-field appearance="fill">
+        <input matInput type="text" placeholder="Type to search here" (keyup)="searchForData($event.target)">
+      </mat-form-field>
+  </div>
+
+
+  <div class="table-container">
+  <ag-grid-angular
+    style="width: 100%; height: 100%"
+    class="ag-theme-alpine"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowData]="tableListData"
+    [rowSelection]="'multiple'"
+    [animateRows]="true"
+    (gridReady)="onGridReady($event)"
+  ></ag-grid-angular>
+  </div>
+</div>

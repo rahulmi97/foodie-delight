@@ -1,0 +1,23 @@
+.list-container{
+  height: 60%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+  .search-container {
+    // height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .input{
+      border: none;
+      border-bottom: 1px solid gray;
+    }
+  }
+  .table-container{
+    height: 80%;
+  }
+}
+
+
