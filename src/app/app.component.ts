@@ -10,7 +10,7 @@ import { Observable, of } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'food-delight';
+  title = 'foodie-delight';
   private count$: Observable<IListData[]> = of([]);
   constructor(private store: Store<{ listData: IListData[] }>) {}
   ngOnInit() {
